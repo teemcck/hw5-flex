@@ -60,11 +60,11 @@ body {
   margin: 10px 10px 10px 10px;
 }
 
-/* Style the links. (Is this correct?) */
-/* a:visited {
+/* Style the links. */
+a:visited {
+  color: inherit; /* Uses the default text color */
   text-decoration: none;
-  color: none;
-} */
+}
 
 /* Style the logo animation */
 @keyframes logo-animation {
@@ -119,11 +119,13 @@ body {
     background-image: none;
   }
 
+  /* Style the header for printing. */
   body > header {
     flex-direction: column;
     justify-content: center;
   }
 
+  /* Style navigation elements. */
   nav {
     width: 100%;
   }
@@ -143,6 +145,7 @@ body {
   .pricing .card {
     border: 2px solid #45ADDD;
     width: none;
+    /* Ensures consistent card width in print */
     flex-basis: 325px;
   }
 
@@ -150,15 +153,18 @@ body {
     flex-basis: 275px;
     height: fit-content;
   }
-
+  
+  /* Adds a thumbs-up emoji to the last list item */
   .card ul li:last-of-type::after {
-    content: " 👍";
+    content: " 👍"; 
   }
 
+  /* Hides the gallery text when printing */
   #gallery {
     display: none;
   }
 
+  /* Ensures all gallery images are hidden */
   .gallery {
     display: none;
   }
