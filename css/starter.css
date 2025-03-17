@@ -2,8 +2,6 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16pt; /* test for this! Make all sizes em or rem */
-  font-family: "Poppins";
-  background-image: url("images/concrete_seamless.png") #f1f1f1;
 }
 
 header {
@@ -48,7 +46,6 @@ a.skip:focus {
 *:focus {
   border: 2px solid black;
 }
-
 
 .nav_item a {
   animation-duration: 5s;
@@ -108,16 +105,3 @@ footer {
   padding: 30px;
   text-align: center;
 }
-
-@keyframes logo-animation {
-  from {
-    width: 25px;
-    opacity: 0;
-  }
-  to {
-    width: 475px;
-    opacity: 1;
-  }
-}
-
-  
